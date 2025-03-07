@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Calculator</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .calculator {
+            background-color: #f8cde5; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="calculator border rounded p-4 shadow w-50">
+            <div class="text-center mb-3 fw-bold">Pink Calculator</div>
+            <input type="text" class="form-control mb-3" disabled />
+            
+            <div class="btn-group dropstart mb-3">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tipo de Calculadora
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Científica</a></li>
+                    <li><a class="dropdown-item" href="#">Calculadora Gráfica</a></li>
+                </ul>
+            </div>
+            
+            <div class="row g-2">
+              <div class="d-flex justify-content-center">
+                <div class="row g-2 w-100"> 
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="appendValue('1/x')">1/x</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="appendValue('x²')">x²</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="appendValue('2√x')">2√x</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="appendValue('÷')">÷</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-2">
+              <div class="d-flex justify-content-center">
+                <div class="row g-2 w-100"> 
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="appendValue('%')">%</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="appendValue('x²')">x²</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="appendValue('2√x')">2√x</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="appendValue('÷')">÷</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row g-2">
+            <div class="d-flex justify-content-center">
+              <div class="row g-2 p-4 w-100"> 
+                  <div class="col-2">
+                      <button type="button" class="btn btn-light btn-lg w-100" onclick="appendValue('+')">+</button>
+                  </div>
+                  <div class="col-2">
+                      <button type="button" class="btn btn-light btn-lg w-100" onclick="appendValue('-')">-</button>
+                  </div>
+                  <div class="col-2">
+                      <button type="button" class="btn btn-light btn-lg w-100" onclick="appendValue('*')">*</button>
+                  </div>
+                  <div class="col-2">
+                      <button type="button" class="btn btn-light btn-lg w-100" onclick="appendValue('/')">/</button>
+                  </div>
+                  <div class="col-2">
+                    <button type="button" class="btn btn-light btn-lg w-100" onclick="appendValue(',')">,</button>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-secondary btn-lg w-100" onclick="appendValue('=')">=</button>
+                </div>
+              </div>
+          </div>
+        </div>
+          
+          <div class="container d-flex justify-content-center">
+            <div class="row g-2 w-100">
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('1')">1</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('2')">2</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('3')">3</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('4')">4</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('5')">5</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('6')">6</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('7')">7</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('8')">8</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-light btn-lg w-100" onclick="appendValue('9')">9</button>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <script>
+        function appendValue(value) {
+            console.log("Valor clicado: ", value); 
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
